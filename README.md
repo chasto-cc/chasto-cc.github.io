@@ -42,3 +42,10 @@ hexo clean
 hexo generate == hexo g
 hexo server == hexo s
 ```
+
+- Build image
+```
+docker build -t myblog:latest .
+
+docker compose up
+```
