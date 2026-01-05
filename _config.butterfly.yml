@@ -272,7 +272,7 @@ footer:
   copyright:
     enable: true
     version: false
-  custom_text: <a href="https://beian.miit.gov.cn/" target_blank">浙ICP备2025192555号</a>
+  custom_text:
 
 # --------------------------------------
 # Aside Settings
