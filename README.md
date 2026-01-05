@@ -1,17 +1,44 @@
+# ZHexoBlog
+
+## Usage
+
+- Install hexo-cli
+```
+npm install -g hexo-cli
+```
+
+- Create hexo project
+```
 hexo init ZHexoBlog
+```
 
+- Install dependencies
+```
 cd ZHexoBlog
-
 npm install
+```
 
-hexo server
-
+- Install butterfly theme
+```
 npm install hexo-theme-butterfly
 
-or
-
+# or
 git clone -b master git@github.com:jerryc127/hexo-theme-butterfly.git themes/butterfly
 
-npm install hexo-renderer-pug hexo-renderer-stylus hexo-generator-search hexo-util moment-timezone--save
+npm install hexo-generator-search
+```
 
-hexo clean & hexo g & hexo s
+- Create pages
+```
+hexo new page categories
+hexo new page tags
+```
+Add `type: "categories"` to `source/categories/index.md`   
+Add `type: "tags"` to `source/categories/index.md`
+
+- Generate public files and run server
+```
+hexo clean
+hexo generate == hexo g
+hexo server == hexo s
+```

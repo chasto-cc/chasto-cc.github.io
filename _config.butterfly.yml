@@ -18,14 +18,12 @@ nav:
   fixed: false
 
 menu:
-  主页: / || fas fa-home
-  时间线: /archives/ || fas fa-archive
-  # 标签: /tags/ || fas fa-tags
-  # 列表||fas fa-list:
-  #   音乐: /music/ || fas fa-music
-  #   电影: /movies/ || fas fa-video
-  # 连接: /link/ || fas fa-link
-  关于: /about/ || fas fa-user
+  Home: / || fas fa-home
+  Archives: /archives/ || fas fa-archive
+  About: /about/ || fas fa-user
+  List||fas fa-list:
+    Tags: /tags/ || fas fa-tags
+    Categories: /categories/ || fas fa-folder-open
 
   # List||fas fa-list:
   #   Music: /music/ || fas fa-music
@@ -56,6 +54,7 @@ code_blocks:
 social:
   fab fa-github: https://github.com/zhiyuan6589 || Github || '#24292e'
   fas fa-envelope: mailto:zhiyuan6589@gmail.com || Email || '#4a7dbe'
+  fa-brands fa-qq: mailto:375046215@qq.com || QQ || '#1f91dc'
 
 # --------------------------------------
 # Image Settings
@@ -173,7 +172,6 @@ subtitle:
   source: false
   # If you close the typewriter effect, the subtitle will only show the first line of sub
   sub: 
-    - 永远热爱生活
     - Always love life
 
 # Article layout on the homepage
@@ -294,7 +292,7 @@ aside:
     category:
   card_author:
     enable: true
-    description: 永远热爱生活
+    description: Always love life
     button:
       enable: true
       icon: fa-solid fa-user
@@ -592,7 +590,7 @@ valine:
   serverURLs:
   bg:
   # Use Valine visitor count as the page view count
-  visitor: false
+  visitor: true
   option:
     placeholder: "欢迎留言~"
     recordIP: true
