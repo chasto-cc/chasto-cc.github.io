@@ -1,6 +1,6 @@
 #!/bin/bash
-git pull
+npm install -g hexo-cli
+npm install
 
-docker build -t myblog:latest .
-
-docker compose up
+hexo clean
+hexo generate
