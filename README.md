@@ -22,9 +22,6 @@ npm install
 ```
 npm install hexo-theme-butterfly
 
-# or
-git clone -b master git@github.com:jerryc127/hexo-theme-butterfly.git themes/butterfly
-
 npm install hexo-generator-search
 ```
 
@@ -39,13 +36,11 @@ Add `type: "tags"` to `source/categories/index.md`
 - Generate public files and run server
 ```
 hexo clean
-hexo generate == hexo g
-hexo server == hexo s
+hexo generate
+hexo server
 ```
 
-- Build image
+- Deploy
 ```
-docker build -t myblog:latest .
-
-docker compose up
+hexo deploy
 ```
